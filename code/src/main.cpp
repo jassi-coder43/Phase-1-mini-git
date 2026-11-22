@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
         return 1;
     }
     std::string cmd = argv[1];
-    Repository repo;
+    Repository repo;  # here make a repo which contain all the condition of commands 
     try {
         if (cmd == "init") repo.init();
         else if (cmd == "add" && argc > 2) repo.add(argv[2]);
