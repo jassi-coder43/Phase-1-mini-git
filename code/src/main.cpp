@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
         if (cmd == "init") repo.init();
         else if (cmd == "add" && argc > 2) repo.add(argv[2]);
         else if (cmd == "commit" && argc > 2) repo.commit(argv[2]);
-        else if (cmd == "log") repo.log();
+        else if (cmd == "log") repo.log();  #this log command is recently added 
         else if (cmd == "cat-file" && argc > 2) repo.catFile(argv[2]);
         else { std::cout << "Unknown command or missing argument\n"; return 1; }
     } catch (const std::exception &e) {
