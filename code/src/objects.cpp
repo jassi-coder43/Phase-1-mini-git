@@ -1,5 +1,7 @@
 #include "objects.h"
 #include "sha1.h"
+#start the hashing part to give value pair to the data for tracking 
+
 
 std::string GitObject::serialize() const {
     std::string c = content();
