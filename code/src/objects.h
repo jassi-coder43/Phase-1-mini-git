@@ -16,6 +16,8 @@ public:
 };
 
 // Blob = content of one file
+#blob
+
 class Blob : public GitObject {
     std::string data;
 public:
