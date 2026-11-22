@@ -134,7 +134,7 @@ void Repository::catFile(const std::string &hash) {
     size_t nul = data.find('\0');
     std::cout << data.substr(nul + 1);
 }
-
+#add new log function
 // Walks from HEAD back through parent commits and prints each one
 void Repository::log() {
     if (!isDir(root)) throw std::runtime_error("not a minigit repository (run init first)");
