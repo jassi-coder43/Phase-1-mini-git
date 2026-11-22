@@ -85,7 +85,7 @@ void Repository::add(const std::string &path) {
     saveIndex();
 }
 
-// Turns flat paths (src/a.c, b.c) into nested Tree objects. Returns root tree hash.
+// Turns flat paths (src/a.c, b.c) into nested Tree objects. Returns root tree hash. #
 std::string Repository::buildTree(const std::map<std::string, std::string> &files) {
     Tree tree;
     std::map<std::string, std::map<std::string, std::string>> subdirs;
